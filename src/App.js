@@ -1,13 +1,20 @@
 import React, { Component } from 'react'
 import { initStore } from './store'
-import Repositories from './views/pages/repositories'
 import { Provider } from 'react-redux'
+import UserSearch from 'views/userSearch'
+import Routes from 'routes'
+import GlobalStyle from 'styles/globalStyle'
 
-const store = initStore({ repositories: [] })
+const store = initStore()
 
 class App extends Component {
   render() {
-    return <Provider store={store} />
+    return (
+      <Provider store={store}>
+        <Routes />
+        <GlobalStyle />
+      </Provider>
+    )
   }
 }
 

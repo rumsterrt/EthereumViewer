@@ -23,6 +23,7 @@ export const sendRequest = ({ endpoint, method, body, headers }) => {
       if (response.status !== 200) {
         return Promise.reject({ ...response })
       }
+
       return { data: response.data }
     })
     .then(

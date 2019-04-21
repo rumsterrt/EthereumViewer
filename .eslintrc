@@ -1,8 +1,9 @@
 {
-    "extends": ["prettier", "standard", "standard-react"],
-    "parser": "babel-eslint",
-    "plugins": ["prettier"],
-    "rules": {
-        "prettier/prettier": "error"
-    }
+  "extends": ["prettier", "standard", "standard-react"],
+  "parser": "babel-eslint",
+  "plugins": ["prettier", "react-hooks"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error"
+  }
 }
